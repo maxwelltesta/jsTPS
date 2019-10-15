@@ -1,5 +1,3 @@
-package jtps;
-
 /**
  * jTPS_Transaction.java
  * 
@@ -13,14 +11,14 @@ package jtps;
  * @author THE McKilla Gorilla (accept no imposters)
  * @version 2.0
  */
-public interface jTPS_Transaction {
+class jsTPS_Transaction {
     /**
      * This method is called by jTPS when a transaction is executed.
      */
-    public void doTransaction();
+    doTransaction();
     
     /**
      * This method is called by jTPS when a transaction is undone.
      */
-    public void undoTransaction();
+    undoTransaction();
 }

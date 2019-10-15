@@ -3,7 +3,7 @@ package junit_test_beds;
 import demo.AddToNum_Transaction;
 import demo.AndMask_Transaction;
 import demo.Num;
-import jtps.jTPS;
+import jstps.jsTPS;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -22,7 +22,7 @@ public class jTPS_Unit_Tests {
     @Test
     public void testAdd() {
         // WE'LL JUST USE A SIMPLE NUM FOR TESTING
-        jTPS tps = new jTPS();
+        jsTPS tps = new jsTPS();
         Num num = new Num();
         Assert.assertEquals(0, num.getNum());
         
