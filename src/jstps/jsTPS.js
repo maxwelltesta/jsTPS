@@ -9,7 +9,7 @@
  * @author THE McKilla Gorilla (accept no imposters)
  * @version 2.0
  */
-class jsTPS extends jsTPS_Transaction{
+class jsTPS {
     constructor() {
         // THE TRANSACTION STACK
         this.transactions = [];

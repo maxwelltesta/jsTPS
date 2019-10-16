@@ -1,7 +1,3 @@
-package demo;
-
-import jtps.jTPS_Transaction;
-
 /**
  * AddToNum_Transaction.java
  * 
@@ -12,12 +8,12 @@ import jtps.jTPS_Transaction;
  * @author THE McKilla Gorilla (accept no imposters)
  * @version 2.0
  */
-public class AddToNum_Transaction implements jTPS_Transaction {
+class AddToNum_Transaction {
     // THIS IS THE OBJECT IT WILL MANIPULATE
-    private Num num;
-    
+    num;
+
     // AMOUNT TO ADD/REMOVE FOR NUM
-    private int amountToAdd;
+    amountToAdd;
 
     /**
      * Constructor for this transaction, it initializes this
@@ -27,30 +23,27 @@ public class AddToNum_Transaction implements jTPS_Transaction {
      * @param initNum
      * @param initAmountToAdd 
      */
-    public AddToNum_Transaction(Num initNum, int initAmountToAdd) {
-        // KEEP THESE FOR LATER
-        num = initNum;
-        amountToAdd = initAmountToAdd;
+    constructor(num, amountToAdd) {
+        this.num = num;
+        this.amountToAdd = amountToAdd
     }
 
     /**
      * This transaction simply adds the value to the num.
      */
-    @Override
-    public void doTransaction() {
-        int oldNum = num.getNum();
-        int newNum = oldNum + amountToAdd;
-        num.setNum(newNum);
+    doTransaction() {
+        let oldNum = this.num.getNum();
+        let newNum = oldNum + this.amountToAdd;
+        this.num.setNum(newNum);
     }
 
     /**
      * As the reverse of do, this method substracts from num.
      */
-    @Override
-    public void undoTransaction() {
-        int oldNum = num.getNum();
-        int newNum = oldNum - amountToAdd;
-        num.setNum(newNum);
+    undoTransaction() {
+        let oldNum = this.num.getNum();
+        let newNum = oldNum - this.amountToAdd;
+        this.num.setNum(newNum);
     }
 
     /**
@@ -58,8 +51,7 @@ public class AddToNum_Transaction implements jTPS_Transaction {
      * 
      * @return A string storing a textual summary of this object.
      */
-    @Override
-    public String toString() {
-        return "Add " + amountToAdd;
+    toString() {
+        return "Add " + this.amountToAdd;
     }
 }
