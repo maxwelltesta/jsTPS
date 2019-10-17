@@ -1,5 +1,5 @@
 'use strict'
-class TodoListTester {
+class jsTPS_Unit_Tests {
     constructor() {}
 
     runTests() {
