@@ -3,25 +3,51 @@
 
 <head>
     <title>TESTING</title>
-
+    <link rel="stylesheet" type="text/css" href="./test.css" />
     <!-- FOR TESTING OUR TODO LISTS -->
-    <script src="./jsTPSTesting.js"></script>
+    <script src="./jsTPS_Tester.js"></script>
+    <script src="./TPS/jsTPS.js"></script>
+    <script src="./TPS/jsTPS_Transaction.js"></script>
+    <script src="./src/Num.js"></script>
 
     <script>
         window.onload = function () {
-            window.jsTPSTesting = new jsTPSTesting();
-            window.jsTPSTesting.runTests();
+            window.test = new jsTPS_Tester();
+            window.test.runTests();
         }
     </script>
 </head>
 
 <body>
-    <div id="unit_testing">
+    <div id="user_testing">
+        <h1>USER TESTING</h1>
+        <input id="numBox" type="text" name="number" value="-" readonly>
+        <div id="spacer"></div>
+        <div id="data">
 
+        </div>
+        <div>
+            <button class="testButton" id="add">Add</button>
+            <select id="dropdown" name="numbers">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+            </select>
+            <br>
+            <button class="testButton" id="undo">Undo</button>
+            <br>
+            <button class="testButton" id="redo">Redo</button>
+            <br>
+            <button class="testButton" id="clear">Clear Transactions</button>
+            <br>
+            <button class="testButton" id="fullclear">Reset Num and Clear Transactions</button>
+            <br>
+        </div>
     </div>
 
-    <div id="user_testing">
-        
+    <div id="unit_testing">
+
     </div>
 </body>
 </html>

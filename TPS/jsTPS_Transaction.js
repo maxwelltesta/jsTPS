@@ -1,5 +1,5 @@
 /**
- * jTPS_Transaction.java
+ * jsTPS_Transaction.js
  * 
  * This interface provides the structure that all transactions to be
  * managed by jTPS must follow. Each transaction must have defined

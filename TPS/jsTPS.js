@@ -1,5 +1,5 @@
 /**
- * jTPS.java
+ * jsTPS.js
  * 
  * This class is used for managing an abstract transaction processing
  * system for the purpose of managing an undo/redo system for an
