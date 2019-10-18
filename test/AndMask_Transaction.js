@@ -2,7 +2,7 @@
  *
  * @author McKillaGorilla
  */
-class AndMask_Transaction{
+class AndMask_Transaction {
     // THIS IS THE OBJECT IT WILL MANIPULATE
     num;
     intNum;

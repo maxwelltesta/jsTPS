@@ -80,7 +80,7 @@ class jsTPS {
     doTransaction() {
         if (this.hasTransactionToRedo()) {
             this.performingDo = true;
-            let transaction = transactions[this.mostRecentTransaction+1];
+            let transaction = this.transactions[this.mostRecentTransaction+1];
             transaction.doTransaction();
             this.mostRecentTransaction++;
             this.performingDo = false;
@@ -206,8 +206,8 @@ class jsTPS {
      * @return A textual summary of the TPS.
      */
     toString() {
-        let text = "--Number of Transactions: " + this.transactions.length + "\n";
-        text += "--Current Index on Stack: " + this.mostRecentTransaction + "\n";
+        let text = "--Number of Transactions: " + this.transactions.length + "<br>";
+        text += "--Current Index on Stack: " + this.mostRecentTransaction + "<br>";
         text += "--Current Transaction Stack:\n";
         for (let i = 0; i <= this.mostRecentTransaction; i++) {
             let jT = this.transactions[i];

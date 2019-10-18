@@ -1,8 +1,8 @@
 /**
- * AddToNum_Transaction.java
+ * AddToNum_Transaction.js
  * 
  * This class is a transaction that can be executed and undone. It
- * can be stored in the jTPS transaction stack and must be constructed
+ * can be stored in the jsTPS transaction stack and must be constructed
  * with all the data necessary to perform both do and undo.
  * 
  * @author THE McKilla Gorilla (accept no imposters)

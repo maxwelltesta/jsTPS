@@ -2,7 +2,7 @@
  * jsTPS_Transaction.js
  * 
  * This interface provides the structure that all transactions to be
- * managed by jTPS must follow. Each transaction must have defined
+ * managed by jsTPS must follow. Each transaction must have defined
  * behavior for do and undo. Note that when defining custom transaction
  * classes one needs to make sure the constructor is given the objects
  * it will need to manipulate at the time the do and undo methods
@@ -15,10 +15,12 @@ class jsTPS_Transaction {
     /**
      * This method is called by jTPS when a transaction is executed.
      */
-    doTransaction();
+    doTransaction() {
+    };
     
     /**
      * This method is called by jTPS when a transaction is undone.
      */
-    undoTransaction();
+    undoTransaction() {
+    };
 }

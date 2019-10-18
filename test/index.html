@@ -6,14 +6,19 @@
     <link rel="stylesheet" type="text/css" href="./test.css" />
     <!-- FOR TESTING OUR TODO LISTS -->
     <script src="./jsTPS_Tester.js"></script>
-    <script src="./TPS/jsTPS.js"></script>
-    <script src="./TPS/jsTPS_Transaction.js"></script>
-    <script src="./src/Num.js"></script>
+    <script src="./jsTPS_Unit_Tests.js"></script>
+    <script src="./jsTPS.js"></script>
+    <script src="./jsTPS_Transaction.js"></script>
+    <script src="./AddToNum_Transaction.js"></script>
+    <script src="./AndMask_Transaction.js"></script>
+    <script src="./OrMask_Transaction.js"></script>
+    <script src="./Num.js"></script>
 
     <script>
         window.onload = function () {
-            window.test = new jsTPS_Tester();
-            window.test.runTests();
+            window.jsTPS_Tester = new jsTPS_Tester();
+            window.jsTPS_Unit_Tests = new jsTPS_Unit_Tests();
+            window.jsTPS_Unit_Tests.runTests();
         }
     </script>
 </head>
@@ -21,13 +26,13 @@
 <body>
     <div id="user_testing">
         <h1>USER TESTING</h1>
-        <input id="numBox" type="text" name="number" value="-" readonly>
+        <input id="numBox" type="text" name="number" readonly>
         <div id="spacer"></div>
         <div id="data">
 
         </div>
         <div>
-            <button class="testButton" id="add">Add</button>
+            <button class="testButton" id="add" onclick="window.jsTPS_Tester.processAdd()" >Add</button>
             <select id="dropdown" name="numbers">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -35,19 +40,20 @@
                     <option value="3">3</option>
             </select>
             <br>
-            <button class="testButton" id="undo">Undo</button>
+            <button class="testButton" id="undo" onclick="window.jsTPS_Tester.processUndo()">Undo</button>
             <br>
-            <button class="testButton" id="redo">Redo</button>
+            <button class="testButton" id="redo" onclick="window.jsTPS_Tester.processRedo()">Redo</button>
             <br>
-            <button class="testButton" id="clear">Clear Transactions</button>
+            <button class="testButton" id="clear" onclick="window.jsTPS_Tester.processClear()">Clear Transactions</button>
             <br>
-            <button class="testButton" id="fullclear">Reset Num and Clear Transactions</button>
+            <button class="testButton" id="fullclear" onclick="window.jsTPS_Tester.processFullClear()">Reset Num and Clear Transactions</button>
             <br>
         </div>
     </div>
 
     <div id="unit_testing">
-
+        <h1>"UNIT" TESTING</h1>
+        <div id="unit_tests"></div>
     </div>
 </body>
 </html>

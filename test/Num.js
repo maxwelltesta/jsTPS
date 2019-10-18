@@ -1,5 +1,5 @@
 /**
- * Num.java
+ * Num.js
  *
  * This class serves as the data class that our transactions will manipulate.
  * It's just an integer wrapper class.
