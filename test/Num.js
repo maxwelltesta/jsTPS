@@ -4,8 +4,6 @@
  * This class serves as the data class that our transactions will manipulate.
  * It's just an integer wrapper class.
  *
- * @author THE McKilla Gorilla (accept no imposters)
- * @version 2.0
  */
 class Num {
     

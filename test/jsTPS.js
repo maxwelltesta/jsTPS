@@ -6,8 +6,6 @@
  * application. Note that one must specify all work done via custom
  * transactions.
  * 
- * @author THE McKilla Gorilla (accept no imposters)
- * @version 2.0
  */
 class jsTPS {
     constructor() {

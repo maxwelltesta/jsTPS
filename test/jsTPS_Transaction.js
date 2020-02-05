@@ -8,8 +8,6 @@
  * it will need to manipulate at the time the do and undo methods
  * are called.
  * 
- * @author THE McKilla Gorilla (accept no imposters)
- * @version 2.0
  */
 class jsTPS_Transaction {
     /**

@@ -1,6 +1,5 @@
 /**
  *
- * @author McKillaGorilla
  */
 class OrMask_Transaction {
     // THIS IS THE OBJECT IT WILL MANIPULATE

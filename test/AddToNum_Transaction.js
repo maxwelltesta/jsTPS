@@ -5,8 +5,6 @@
  * can be stored in the jsTPS transaction stack and must be constructed
  * with all the data necessary to perform both do and undo.
  * 
- * @author THE McKilla Gorilla (accept no imposters)
- * @version 2.0
  */
 class AddToNum_Transaction {
     // THIS IS THE OBJECT IT WILL MANIPULATE
